@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/application-styles.css">
+
+    <title>Game</title>
+</head>
+<body>
+    <div class="application">
+        <header class="application__header">
+            <nav class="controls">
+                <ul class="controls__list">
+                    <li class="controls__item">
+                        <!-- Питай може ли да са бутони -->
+                        <a href="#" class="controls__link">
+                            <span class="icon-svg-wrapper">
+                                <svg class="icon-svg arrow--left">
+                                    <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-arrow-up"></use>
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a href="#" class="controls__link">
+                            <span class="icon-svg-wrapper">
+                                <svg class="icon-svg">
+                                    <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-arrow-up"></use>
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a href="#" class="controls__link">
+                            <span class="icon-svg-wrapper">
+                                <svg class="icon-svg arrow--down">
+                                    <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-arrow-up"></use>
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a href="#" class="controls__link">
+                            <span class="icon-svg-wrapper">
+                                <svg class="icon-svg arrow--right">
+                                    <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-arrow-up"></use>
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a href="#" class="controls__link">
+                            <span class="icon-svg-wrapper">
+                                <svg class="icon-svg">
+                                    <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-play"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="application__main">
+            <section class="game">
+                <section class="game__moves-navigation">
+                    <!-- 2 режима в игра и като натиснеш play -->
+                    <span class="icon-svg">
+
+                    </span>
+                </section>
+
+                <section class="game__board">
+                    <div class="game__field game__field--player"></div>
+                    <div class="game__field"></div>
+                    <div class="game__field"></div>
+
+                    <div class="game__field"></div>
+                    <div class="game__field game__field--wall"></div>
+                    <div class="game__field"></div>
+
+                    <div class="game__field"></div>
+                    <div class="game__field"></div>
+                    <div class="game__field game__field--exit"></div>
+                </section>
+            </section>
+        </main>
+
+        <footer class="application__footer">
+
+        </footer>
+    </div>
+</body>
+</html>

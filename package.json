@@ -1,0 +1,26 @@
+{
+  "name": "javascript-game-vtu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass assets/sass/application-styles.scss assets/css/application-styles.css -w",
+    "devserver": "live-server",
+    "develop": "npm-run-all --parallel devserver watch:sass",
+    "prod": "npm-run-all --parallel devserver build:css",
+    "compile:sass": "node-sass assets/sass/application-styles.scss assets/css/application-styles.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' assets/css/application-styles.css -o assets/css/application-styles.css",
+    "compress:css": "node-sass assets/css/application-styles.css assets/css/application-styles.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Petar Todorov",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "8.2.6",
+    "postcss-cli": "8.3.1",
+    "autoprefixer": "10.2.4",
+    "live-server": "1.2.1",
+    "node-sass": "5.0.0",
+    "npm-run-all": "4.1.5"
+  }
+}
