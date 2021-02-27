@@ -1,0 +1,63 @@
+.controls {
+    background-color: $blue-lighter;
+
+    &--in-game {
+        margin: 0.6rem 0;
+
+        background-color: unset;
+
+        .icon-svg-wrapper {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &--in-game &__list {
+        justify-content: start;
+    }
+
+    &--in-game &__item {
+        margin: 0.1rem;
+    }
+
+    &--in-game &__link {
+        &:link,
+        &:visited {
+            color: $blue-lighter;
+
+            cursor: none;
+            pointer-events: none;
+        }
+
+        &--active {
+            &:link,
+            &:visited {
+                color: $pink;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        margin: 0.4rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: block;
+
+            color: $green;
+        }    
+
+        &:hover,
+        &:active {
+            color: $green-light;
+        }
+    }
+}

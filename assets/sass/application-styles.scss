@@ -1,16 +1,6 @@
 /*
     Here is the place where all application styles from other folders are imported, 
     do NOT write any styles
-
-    * Order of importance:
-
-    1) vendors -> 1)etc.
-    2) abstracts -> 1)variables, 2)fonts, 3)functions, 4)placeholders, 5)mixins, 6)animations
-    3) base -> 1)reset, 2)elements, 3)typography, 4)global, 5)utilities
-    4) layout -> 1)etc.
-    5) pages -> 1)etc.
-    6) components -> 1)etc.
-    7) shame -> 1)shame, 2)test
 */
 
 // vendors:
@@ -21,12 +11,11 @@
 
 
 // base:
-@import './base/reset';
-@import './base/typography';
+@import './base/_index';
 
 
 // layout:
-
+@import './layout/_index';
 
 
 // pages:
@@ -34,9 +23,8 @@
 
 
 //components:
-
+@import './components/_index';
 
 
 // shame:
-@import './shame/shame';
-@import './shame/test';
+@import './shame/_index';

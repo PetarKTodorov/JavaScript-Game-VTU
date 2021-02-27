@@ -1,1 +1,129 @@
-*,*:after,*:before{box-sizing:border-box;margin:0;padding:0}body{font-family:"Montserrat", sans-serif;font-size:1.6rem;line-height:1.5}h1,h2,h3,h4,h5,h6{line-height:1.2}
+/*
+    Here is the place where all application styles from other folders are imported, 
+    do NOT write any styles
+*/
+/*
+    Here is the place where all variables are imported, do NOT write any styles
+*/
+/*
+    This file is only for color variables, do NOT write any styles.
+
+    * Order your color variations from light to dark:
+*/
+/*
+    This file is only for font-sizes variables, do NOT write any styles.
+*/
+/* 
+    This file is for reset main styles of HTML elements.    
+*/
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* 
+    This file is for application base typography styles, this means set properties 
+    like: "font, color, text-decoration, etc.", to css selectors.
+*/
+html {
+  font-size: 10px; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2; }
+
+a {
+  text-decoration: none; }
+
+ul,
+ol {
+  list-style-type: none; }
+
+.application {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #789e35; }
+
+.icon-svg-wrapper {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  fill: currentColor; }
+  .icon-svg-wrapper .icon-svg {
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.arrow--left {
+  transform: rotate(-90deg); }
+
+.arrow--right {
+  transform: rotate(90deg); }
+
+.arrow--down {
+  transform: rotate(180deg); }
+
+.controls {
+  background-color: #B0BB9C; }
+  .controls--in-game {
+    margin: 0.6rem 0;
+    background-color: unset; }
+    .controls--in-game .icon-svg-wrapper {
+      width: 2rem;
+      height: 2rem; }
+  .controls--in-game .controls__list {
+    justify-content: start; }
+  .controls--in-game .controls__item {
+    margin: 0.1rem; }
+  .controls--in-game .controls__link:link, .controls--in-game .controls__link:visited {
+    color: #B0BB9C;
+    cursor: none;
+    pointer-events: none; }
+  .controls--in-game .controls__link--active:link, .controls--in-game .controls__link--active:visited {
+    color: #807186; }
+  .controls__list {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .controls__item {
+    margin: 0.4rem; }
+  .controls__link:link, .controls__link:visited {
+    display: block;
+    color: #528000; }
+  .controls__link:hover, .controls__link:active {
+    color: #5e9300; }
+
+.game__board {
+  display: grid;
+  grid-template-columns: repeat(3, 15rem);
+  grid-template-rows: repeat(3, 15rem);
+  grid-gap: 0.6rem;
+  justify-content: center; }
+
+.game__field {
+  border-radius: 0.6rem;
+  border: 0.1rem solid #B0BB9C; }
+  .game__field--player {
+    background-color: #807186; }
+  .game__field--wall {
+    background-color: #808080; }
+  .game__field--exit {
+    background-color: #7318A5; }
+
+/* 
+    This file is for quick fixes, which MUST be moved to the right place.
+*/
+/* 
+    This file is for test purpose.
+*/

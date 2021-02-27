@@ -1,0 +1,33 @@
+.game {
+    &__moves-navigation {
+
+    }
+
+    &__board {
+        display: grid;
+
+        grid-template-columns: repeat(3, 15rem);
+        grid-template-rows: repeat(3, 15rem);
+    
+        grid-gap: 0.6rem;
+    
+        justify-content: center;
+    }
+
+    &__field {
+        border-radius: 0.6rem;
+        border: 0.1rem solid $blue-lighter;
+
+        &--player {
+            background-color: $pink;
+        }
+
+        &--wall {
+            background-color: $grey;
+        }
+
+        &--exit {
+            background-color: $purple;
+        }
+    }
+}

@@ -7,7 +7,7 @@
     "watch:sass": "node-sass assets/sass/application-styles.scss assets/css/application-styles.css -w",
     "devserver": "live-server",
     "develop": "npm-run-all --parallel devserver watch:sass",
-    "prod": "npm-run-all --parallel devserver build:css",
+    "production": "npm-run-all --parallel devserver build:css",
     "compile:sass": "node-sass assets/sass/application-styles.scss assets/css/application-styles.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' assets/css/application-styles.css -o assets/css/application-styles.css",
     "compress:css": "node-sass assets/css/application-styles.css assets/css/application-styles.css --output-style compressed",

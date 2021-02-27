@@ -3,6 +3,10 @@
     like: "font, color, text-decoration, etc.", to css selectors.
 */
 
+html {
+  font-size: $font-html-size;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: $font-default-size;
@@ -16,4 +20,13 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
 }
