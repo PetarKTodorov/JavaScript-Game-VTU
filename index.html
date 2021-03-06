@@ -15,7 +15,7 @@
             <nav class="controls">
                 <ul class="controls__list">
                     <li class="controls__item">
-                        <a href="#" class="controls__link">
+                        <a href="#" id="left-button" class="controls__link" data-move="left">
                             <span class="icon-svg-wrapper">
                                 <svg class="icon-svg arrow--left">
                                     <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-arrow-up"></use>
@@ -25,7 +25,7 @@
                     </li>
 
                     <li class="controls__item">
-                        <a href="#" class="controls__link">
+                        <a href="#" id="up-button" class="controls__link" data-move="up">
                             <span class="icon-svg-wrapper">
                                 <svg class="icon-svg">
                                     <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-arrow-up"></use>
@@ -35,7 +35,7 @@
                     </li>
 
                     <li class="controls__item">
-                        <a href="#" class="controls__link">
+                        <a href="#" id="down-button" class="controls__link" data-move="down">
                             <span class="icon-svg-wrapper">
                                 <svg class="icon-svg arrow--down">
                                     <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-arrow-up"></use>
@@ -45,7 +45,7 @@
                     </li>
 
                     <li class="controls__item">
-                        <a href="#" class="controls__link">
+                        <a href="#" id="right-button" class="controls__link" data-move="right">
                             <span class="icon-svg-wrapper">
                                 <svg class="icon-svg arrow--right">
                                     <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-arrow-up"></use>
@@ -55,7 +55,7 @@
                     </li>
 
                     <li class="controls__item">
-                        <a href="#" class="controls__link">
+                        <a href="#" id="play-button" class="controls__link">
                             <span class="icon-svg-wrapper">
                                 <svg class="icon-svg">
                                     <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-play"></use>
@@ -73,7 +73,7 @@
                     <!-- 2 режима в игра и като натиснеш play -->
                     <nav class="controls controls--in-game">
                         <ul class="controls__list">
-                            <li class="controls__item">
+                            <!-- <li class="controls__item">
                                 <a href="#" class="controls__link controls__link--active">
                                     <span class="icon-svg-wrapper">
                                         <svg class="icon-svg arrow--left">
@@ -121,7 +121,7 @@
                                         </svg>
                                     </span>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </nav>
                 </section>
@@ -145,6 +145,8 @@
         <footer class="application__footer">
 
         </footer>
+
+        <script src="./index.js" type="module"></script>
     </div>
 </body>
 </html>
