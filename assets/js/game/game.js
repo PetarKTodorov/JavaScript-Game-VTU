@@ -1,4 +1,4 @@
-import { deepCopy, sleepAsync, getRandomInt } from './common/functions.js';
+import { deepCopy, sleepAsync, getRandomInt } from '../common/functions.js';
 
 // Game constants
 const PLAYER_INDEX_IDENTIFICATOR = 1;

@@ -1,4 +1,4 @@
-import Game from './assets/js/game.js';
+import Game from './game/game.js';
 
 (() => {
     const neededGameHTMLSelectors = {
