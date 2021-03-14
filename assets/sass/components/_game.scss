@@ -1,13 +1,13 @@
 .game {
     &__moves-navigation {
-
+        min-height: 3rem;
     }
 
     &__board {
         display: grid;
 
-        grid-template-columns: repeat(3, 15rem);
-        grid-template-rows: repeat(3, 15rem);
+        grid-template-columns: repeat(3, 10rem);
+        grid-template-rows: repeat(3, 10rem);
     
         grid-gap: 0.6rem;
     

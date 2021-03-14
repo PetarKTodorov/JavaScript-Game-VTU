@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "12.19.0",
+    "npm": "6.14.8"
+  },
   "scripts": {
     "watch:sass": "node-sass assets/sass/application-styles.scss assets/css/application-styles.css -w",
     "devserver": "live-server",

@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="./assets/css/application-styles.css">
 
+    <link rel='shortcut icon' type='image/x-icon' href='./assets/images/html/favicon.ico' />
+
     <title>Game</title>
 </head>
 <body>
@@ -70,75 +72,20 @@
         <main class="application__main">
             <section class="game">
                 <section class="game__moves-navigation">
-                    <!-- 2 режима в игра и като натиснеш play -->
                     <nav class="controls controls--in-game">
                         <ul class="controls__list">
-                            <!-- <li class="controls__item">
-                                <a href="#" class="controls__link controls__link--active">
-                                    <span class="icon-svg-wrapper">
-                                        <svg class="icon-svg arrow--left">
-                                            <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-arrow-up"></use>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </li>
-        
-                            <li class="controls__item">
-                                <a href="#" class="controls__link">
-                                    <span class="icon-svg-wrapper">
-                                        <svg class="icon-svg">
-                                            <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-arrow-up"></use>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </li>
-        
-                            <li class="controls__item">
-                                <a href="#" class="controls__link">
-                                    <span class="icon-svg-wrapper">
-                                        <svg class="icon-svg arrow--down">
-                                            <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-arrow-up"></use>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </li>
-        
-                            <li class="controls__item">
-                                <a href="#" class="controls__link">
-                                    <span class="icon-svg-wrapper">
-                                        <svg class="icon-svg arrow--right">
-                                            <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-arrow-up"></use>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </li>
-        
-                            <li class="controls__item">
-                                <a href="#" class="controls__link">
-                                    <span class="icon-svg-wrapper">
-                                        <svg class="icon-svg">
-                                            <use href="./assets/images/html/icons/svg-s/icon-sprite.svg#icon-play"></use>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </li> -->
+                           <!-- moves in game generates here -->
                         </ul>
                     </nav>
                 </section>
 
-                <section class="game__board">
-                    <div class="game__field game__field--player"></div>
-                    <div class="game__field"></div>
-                    <div class="game__field"></div>
+                <section class="game__board"></section>
+            </section>
 
-                    <div class="game__field"></div>
-                    <div class="game__field game__field--wall"></div>
-                    <div class="game__field"></div>
-
-                    <div class="game__field"></div>
-                    <div class="game__field"></div>
-                    <div class="game__field game__field--exit"></div>
-                </section>
+            <section class="message">
+                <p class="message__text">
+                    <!-- game over message generates here -->
+                </p>
             </section>
         </main>
 
